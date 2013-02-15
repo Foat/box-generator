@@ -1,0 +1,42 @@
+apply plugin: 'scala'
+
+def mainClassName = "tools.generate.BoxGeneratorApp"
+def scalaVersion = "2.10.0"
+def j3dFolder = "../../lib/j3d-1_5_2/lib/ext"
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        scala {
+            srcDirs = ['src']
+        }
+    }
+}
+
+dependencies {
+    compile "org.scala-lang:scala-library:$scalaVersion"
+    compile "org.scala-lang:scala-swing:$scalaVersion"
+    def exists = new File(j3dFolder).exists()
+    println(exists)
+    if (exists)
+        compile fileTree(dir: j3dFolder, includes: ['*.jar'])
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': mainClassName, 'Class-Path': configurations.compile.files.name.join(" ")
+    }
+}
+
+task libs(type: Sync) {
+    from configurations.runtime
+    into "$buildDir/libs"
+    include '**/*.jar'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.4'
+}

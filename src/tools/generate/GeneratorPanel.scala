@@ -10,8 +10,6 @@ import swing.Swing._
  * @author Foat Akhmadeev
  */
 final class GeneratorPanel(gd: GraphicsDevice) extends BoxPanel(Orientation.Horizontal) {
-  //file name for snapshot
-  private val fileName = "test.png"
   border = Swing.EmptyBorder(0, 50, 0, 0)
 
   import SceneCreator._
@@ -36,7 +34,7 @@ final class GeneratorPanel(gd: GraphicsDevice) extends BoxPanel(Orientation.Hori
 
     reactions += {
       case ButtonClicked(`snapshot`) => {
-        universe.doSnapshot(fileName)
+        universe.doSnapshot(Constants.snapshotName)
       }
       case ButtonClicked(`random`) => {
         randomPos()

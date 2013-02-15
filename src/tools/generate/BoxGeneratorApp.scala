@@ -7,7 +7,7 @@ import java.awt.{Point, Dimension, Toolkit}
  * @author Foat Akhmadeev
  */
 object BoxGeneratorApp extends SwingApplication {
-  def startup(args: Array[String]) {
+  override def startup(args: Array[String]) {
     val appPanel = new GeneratorPanel(mainFrame.peer.getGraphicsConfiguration.getDevice)
     mainFrame.contents = appPanel
     mainFrame.pack()

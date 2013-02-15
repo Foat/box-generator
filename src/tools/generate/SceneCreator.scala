@@ -3,6 +3,7 @@ package tools.generate
 import javax.media.j3d.{PolygonAttributes, Transform3D, TransformGroup, Switch}
 import javax.vecmath.Vector3f
 import util.Random
+import Constants.angle
 
 /**
  * @author Foat Akhmadeev
@@ -38,7 +39,7 @@ object SceneCreator {
     setCapability(TransformGroup.ALLOW_TRANSFORM_WRITE)
     setTransform(new Transform3D {
       //rotate group
-      rotY(Math.PI / 6.0d)
+      rotY(angle)
       //move group
       setTranslation(new Vector3f(.0f, .0f, -1.0f))
     })

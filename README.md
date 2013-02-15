@@ -1,18 +1,22 @@
-box-generator
-=============
+# box-generator #
 
 This is simple scala swing + java3d application.
 The project's objective is to generate some test samples for the following task:
-we have a simple room ``mainBox``, which is filled with boxes, we need to determine the number of boxes and their positions 
+we have a simple room `mainBox`, which is filled with boxes, we need to determine the number of boxes and their positions
 using only one image.
 _______________
 
 tested on: 
-* java 1.7.10
+* java 1.7.13
 * scala 2.10
 * java3d 1.5.2
 
-Useful links
-------------
+## How to run ##
+* install java3d
+* run `gradlew libs build` in your command promt if you don't have gradle, `gradle libs build` otherwise
+* run `java -jar build/libs/box-generator.jar`
+
+## Useful links ##
+* [Java 3D installation](http://download.java.net/media/java3d/builds/release/1.5.2/README-download.html)
 * http://www.java-tips.org/other-api-tips/java3d/
 * http://www.interactivemesh.org/testspace/j3dmeetsscala.html

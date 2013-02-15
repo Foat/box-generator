@@ -2,7 +2,7 @@ package tools.generate
 
 import javax.media.j3d._
 import com.sun.j3d.utils.universe.SimpleUniverse
-import java.awt.{Color, GraphicsDevice}
+import java.awt.GraphicsDevice
 import com.sun.j3d.utils.behaviors.mouse.{MouseWheelZoom, MouseTranslate, MouseRotate}
 import javax.vecmath.{Point3d, Color3f}
 import java.awt.image.BufferedImage
@@ -14,7 +14,7 @@ import javax.imageio.ImageIO
  */
 final class GeneratorUniverse(gd: GraphicsDevice, scene: TransformGroup) {
   //scene background
-  private val backgroundColor = Color.WHITE
+  private val backgroundColor = Constants.leafColor
   private val backgroundColor3f = new Color3f(backgroundColor)
 
   //main canvas

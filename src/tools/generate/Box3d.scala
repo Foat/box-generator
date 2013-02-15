@@ -3,7 +3,6 @@ package tools.generate
 import javax.media.j3d._
 import javax.vecmath.Color3f
 import javax.media.j3d.GeometryArray._
-import java.awt.Color
 import PolygonAttributes._
 import Box3D._
 
@@ -84,7 +83,7 @@ object Box3D {
   val SCALE_Y = 0x02
   val SCALE_Z = 0x04
 
-  private val boxColor = new Color3f(Color.GRAY)
+  private val boxColor = new Color3f(Constants.shapeColor)
 
   //default coordinates
   private val coordinates = Array(
