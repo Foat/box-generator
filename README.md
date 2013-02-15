@@ -13,7 +13,7 @@ tested on:
 
 ## How to run ##
 * install java3d
-* run `gradlew libs build` in your command promt if you don't have gradle, `gradle libs build` otherwise
+* run `gradlew libs build` in your command line if you don't have gradle, `gradle libs build` otherwise
 * run `java -jar build/libs/box-generator.jar`
 
 ## Useful links ##
