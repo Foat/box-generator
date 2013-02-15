@@ -19,9 +19,7 @@ sourceSets {
 dependencies {
     compile "org.scala-lang:scala-library:$scalaVersion"
     compile "org.scala-lang:scala-swing:$scalaVersion"
-    def exists = new File(j3dFolder).exists()
-    println(exists)
-    if (exists)
+    if (new File(j3dFolder).exists())
         compile fileTree(dir: j3dFolder, includes: ['*.jar'])
 }
 
