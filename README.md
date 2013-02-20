@@ -6,10 +6,11 @@ we have a simple room `mainBox`, which is filled with boxes, we need to determin
 using only one image.
 _______________
 
-tested on: 
-* java 1.7.13
-* scala 2.10
-* java3d 1.5.2
+tested on:
+
+* [java 1.7.13](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* [scala 2.10](http://www.scala-lang.org/)
+* [java3d 1.5.2](http://java3d.java.net/)
 
 ## How to run ##
 * install java3d
@@ -20,3 +21,6 @@ tested on:
 * [Java 3D installation](http://download.java.net/media/java3d/builds/release/1.5.2/README-download.html)
 * http://www.java-tips.org/other-api-tips/java3d/
 * http://www.interactivemesh.org/testspace/j3dmeetsscala.html
+
+## License ##
+MIT: http://foat.mit-license.org
