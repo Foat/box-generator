@@ -1,7 +1,7 @@
 apply plugin: 'scala'
 
 def mainClassName = "tools.generate.BoxGeneratorApp"
-def scalaVersion = "2.10.0"
+def scalaVersion = "2.10.1"
 def j3dFolder = "../../lib/j3d-1_5_2/lib/ext"
 
 repositories {

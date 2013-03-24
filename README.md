@@ -8,8 +8,8 @@ _______________
 
 tested on:
 
-* [java 1.7.13](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-* [scala 2.10](http://www.scala-lang.org/)
+* [java 1.7.17](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* [scala 2.10.1](http://www.scala-lang.org/)
 * [java3d 1.5.2](http://java3d.java.net/)
 
 ## How to run ##
